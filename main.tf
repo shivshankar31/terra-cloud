@@ -3,10 +3,10 @@ resource "random_pet" "server" {
 }
 
 
-# module "s3-bucket" {
-#   source  = "terraform-aws-modules/s3-bucket/aws"
-#   version = "4.1.2"
-# }
+module "s3-bucket" {
+  source  = "terraform-aws-modules/s3-bucket/aws"
+  version = "4.1.2"
+}
 #
 data "aws_availability_zones" "availability_zone" {}
 data "aws_region" "current" {}
